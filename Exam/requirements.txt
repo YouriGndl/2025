@@ -5,22 +5,75 @@
 
 # --- The Interface ---
 jupyterlab==4.5.1
+# Web-based interactive development environment used to run notebooks,
+# write code, visualize results, and prepare exam answers interactively.
+
 notebook==7.5.1
+# Core Jupyter Notebook package that executes .ipynb files
+# (kernel management, cell execution, outputs).
+
 ipykernel==7.1.0
+# Python kernel that allows Jupyter to execute Python code
+# inside notebooks and virtual environments.
 
 # --- The Libraries Imported in Your Code ---
 numpy==2.3.5
+# Fundamental numerical computing library:
+# - N-dimensional arrays
+# - Linear algebra
+# - Vectorized mathematical operations
+
 pandas==2.3.3
+# Data manipulation and analysis:
+# - DataFrames and Series
+# - Data cleaning, grouping, merging, filtering
+# - Tabular datasets used throughout the exam
+
 scipy==1.16.3
+# Scientific computing tools:
+# - Statistical tests (e.g., t-test, chi-squared)
+# - Optimization
+# - Distance metrics and sparse matrices
+
 statsmodels==0.14.6
+# Statistical modeling and inference:
+# - Linear and logistic regression
+# - Hypothesis testing
+# - Confidence intervals and statistical summaries
+
 scikit-learn==1.8.0
+# Machine learning library:
+# - Classification, regression, clustering
+# - TF-IDF, train/test split, cross-validation
+# - Model evaluation (accuracy, ROC, F1, etc.)
+
 networkx==3.6.1
+# Graph and network analysis:
+# - Directed and undirected graphs
+# - Centrality measures (PageRank, degree, betweenness)
+# - Network construction and analysis
 
 # --- Visualization ---
 matplotlib==3.10.8
+# Low-level plotting library:
+# - Line plots, bar charts, histograms
+# - Full control over figures and axes
+
 seaborn==0.13.2
+# High-level statistical visualization built on matplotlib:
+# - Distribution plots, boxplots, heatmaps
+# - Cleaner default styles for exploratory analysis
 
 # --- Essential Dependencies ---
 patsy==1.0.2         # For Statsmodels formulas
+# Formula interface used by statsmodels
+# (e.g., y ~ x1 + x2 for regression models)
+
 joblib==1.5.3        # For Scikit-learn
+# Utility library used by scikit-learn:
+# - Model persistence (saving/loading models)
+# - Parallel computation
+
 requests==2.32.5     # Safe to keep for data fetching
+# HTTP library for fetching data from URLs or APIs
+# (not always required, but safe and lightweight)
